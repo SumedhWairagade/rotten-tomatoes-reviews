@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rotten Tomatoes Reviews</title>
+        <link rel="stylesheet" href="blogcss.css">
+    </head>
+    <body>
+        <header>
+            <h1><img src="pic.jpg" class="image" alt="'My Logo">Sumedh Wairagade</h1>
+            <p class="heade">Rotten Tomatoes Reviews Kaggle Dataset using Naive Bayes Classifier</p>
+            <a href="https://sumedhwairagade.github.io/portfolio/" class="linke">CV</a>
+        </header>
+        <main>
+            <h2><b>Rotten Tomatoes Reviews</b></h2>
+            <p class="tex">I have build a model to predict the freshness of the reviews from the given <i>rotten-tomatoes-reviews dataset</i> on Kaggle, <a href="https://www.kaggle.com/datasets/ulrikthygepedersen/rotten-tomatoes-reviews" target="_blank">rotten-tomatoes-reviews dataset</a>. Rotten Tomatoes Reviews Dataest has been a popular area of research in <i>Sentiment Analysis</i> Area. The ability to predict and classify reviews from Rotten Tomatoes which can have a wide range of applications, including Sentiment Analysis, Social Media Monitoring, and Product Analysis. In this post, we built a Classification model using Naive Bayes Classifier given in sklearn library, a popular Classification model.</p>
+            <h3><b>First Step:</b></h3>
+            <p class="tex">We generate an api to access the kaggle Dataset in google colab, it will give us a <i>kaggle.json</i> file which we have to upload in our notebook files menu. We download the required dataset from kaggle to train our model. Our Dataset has reviews with two different labels such as Fresh and Rotten. We just unzip the downloaded Dataset in google colab, then access it from files, which you can see it <a href="https://www.kaggle.com/general/74235" target="_blank">here</a> and there is one another way in which we can upload the file to our google drive and then access it from there by giving the notebook file access to your google dataset.</p>
+            <h3><b>Second Step:</b></h3>
+            <p class="tex">Now, we use the Python libraries to load and preprocess the data. We will use sklearn, a scientific tool-kit library, to build a Review Analysis model from the dataset. We will also split the dataset in train and test set. We used <i>CountVectorizer</i> function to find out frequencies of the words in our dataset.</p>
+            <p class="tex">We understand our Data and convert it into a Dataframe using the pandas library. Also we have defined a Function to evaluate the <i>validation score</i> for our data split, Also we have defined another function to determine the <i>likelihood</i> of the predicted answer.</p>
+            <p class="tex">We used a <i>Multinomial Naive Bayes Classifier</i> model given in the sklearn library. We fine tuned our hyperparameters by using <i>KFold Cross Validation</i> from sklearn, and found out the best learning rate and min_df variable which is used to determine the freqency of words that should be removed.</p>
+            <p class="tex">After initializing the model and preprocessing the data, we fit the data in our model. And train it with validation set as well. The Multinomial Naive Bayes Classifier model works by calculating the conditional probability of each feature given each class, and then using Bayes' theorem to calculate the probability of each class given the observed features in a document. The class with the highest probability is then assigned as the predicted class for the document.</p>
+            <h3><b>Next Step:</b></h3>
+            <p class="tex">We have check the accuracy of our classifier model after training the model. We compare the <i>accuracy</i> of <i>train data</i> and <i>test data</i> on our model.</p>
+            <p class="tex">Also we displayed some of the mis-predicted reviews by our model, where the resultant label was expected to be fresh and our model predicted it as rotten and vice-a-verse.</p>
+            <p class="tex">We predicted the label for one of our own review sample using our trained model. You can use many other models to do the text classification work such as, SVM, Decision Trees, Random Forest(it is just the extension of the Decision Trees), Gradient Boosting Algorithms, and Neural Networks.</p>
+            <h3><b>Motivation:</b></h3>
+            <p class="tex">This assignment was to understand and implement the Sentiment Analysis Model using sklearn library. The best part of building this model was to understand the data we are working on and to understand how to use the technology to understand the sentiment behind it. Sometimes the reviews could get tricky but if we build a good enough model we could successfully predict the true intentions.</p>
+            <h3><b>Conclusion and Future Scope:</b></h3>
+            <p class="tex">I experienced how to preprocess the text data and build a text classification model in this assignment and got to know how I can tune my hyperparameters to make my model to perform better. I have made a <a href="https://colab.research.google.com/drive/1sGBOtstuA1mOtMOWDzrty0k5Re0Rcb23?usp=sharing" target="_blank">Google Colab notebook</a> of it, which you can check out it is pretty easy to understand.</p>
+            <p class="tex">Try competitions on Kaggle it is fun and good for practicing your skills and keeping uptodate with current technology.</p>
+        </main>
+        <footer>
+            <a href="mailto: sumedhwairagade2gmail.com"><img src="email.png"></a>
+            <a href="https://www.linkedin.com/in/sumedh-wairagade-5b7263151/" target="_blank"><img src="linkedin.png"></a>
+            <a href="https://github.com/SumedhWairagade" target="_blank"><img src="github.png"></a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+header{
+    background-color:bisque;
+    color: #414141;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+header .image{
+    width: 70px;
+    height:70px;
+    border-radius: 7px;
+}   
+header .heade{
+    font-size: 27px;
+    color: #414141;
+    padding-left: 80px;
+}
+h1{
+    font-size: 50px;
+}
+a{
+    color: blue;
+}
+.linke{
+    float: right;
+    margin-top: -70px;
+    padding-right: 30px;
+    font-size: 40px;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+main{
+    padding: 3%;
+    color: #333333;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+h3{
+    font-size: 34px;
+}
+.tex{
+    font-size: 25px;
+}
+i{
+    color: red;
+}
+
+footer{
+    text-align: center;
+}
